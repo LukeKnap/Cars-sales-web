@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../img/favicon-car-2.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <title>ENGETO - 2.projekt</title>
+</head>
+
+<body>
+    <header class="bg-primaryColor dark:bg-darkColor fixed top-0 left-0 w-full z-50" id="header">
+        <nav class="container relative h-14 flex justify-between items-center">
+            <div>
+                <a href="" class="text-2xl uppercase font-oswald">knap<span class="text-secondaryColor">car</span></a>
+            </div>
+
+            <div class="absolute top-0 left-0 w-full py-14 bg-primaryColor dark:bg-darkColor border-secondaryColor md:block md:static md:py-0 md:boder-none md:w-auto md:ml-auto "
+                id="nav-menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row">
+                    <li>
+                        <a href="#home"
+                            class="nav__link text-secondaryColor hover:text-secondaryColor ease-in duration-300">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-300">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-300">List of
+                            cars</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="nav__link hover:text-secondaryColor ease-in duration-300">Review</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link hover:text-secondaryColor ease-in duration-300">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5"><i class="ri-moon-line cursor-pointer ml-4 text-xl"
+                    id="theme-toggle"></i>
+
+
+                <div class="md:hidden" id="hamburger">
+                    <i class="ri-menu-line cursor-pointer text-xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section id="home">
+            <div class="container flex flex-col items-center gap-10 md:flex-row">
+                <div class="mx-auto md:basis-1/2 lg:basis-2/5">
+                    <img src="../img/BMW-x5-home.png" alt="home image" class="home__image w-60 md:w-full">
+                </div>
+
+                <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                    <h1 class="home__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <div class="separator mx-auto md:mx-0"></div>
+                    <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere blanditiis
+                        odio similique corrupti accusantium quos hic excepturi inventore et quidem aliquid vel fugit
+                        soluta quas minima quo unde, suscipit aliquam!</p>
+                    <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+                        <div class="text-center">
+                            <i class="fa-solid fa-truck-droplet text-secondaryColor text-4xl"></i>
+                            <br />
+                            efsfsdgdsgdsgs
+                        </div>
+
+                        <div class="text-center md:flex-col ">
+                            <i class="fa-solid fa-car-burst text-secondaryColor text-4xl"></i>
+                            <br />
+                            efsfsdgdsgdsgs
+                        </div>
+
+                        <div class="text-center">
+                            <i class="fa-solid fa-users-gear text-secondaryColor text-4xl"></i>
+                            <br />
+                            efsfsdgdsgdsgs
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="category">
+            <div class="container flex flex-col gap-5 md:flex-row">
+
+                <!-- 1 CARD -->
+                <div
+                    class="category__card bg-redColor dark:bg-darkColorLight flex py-3 rounded-lg overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative">
+                        <img src="../img/BMW-5.png" alt="category image" class="absolute w-28 -bottom-0">
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="card__title">BMW</h4>
+                            <p class="text-xs pb-1">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <a href="#" class="text-black border-b border-t border-black cursor-pointer">Shop now</a>
+                    </div>
+                </div>
+
+                <!-- 2 CARD -->
+
+                <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative">
+                        <img src="../img/AUDI - 2.png" alt="category image" class="absolute w-28 -bottom-0">
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="card__title">AUDI</h4>
+                            <p class="text-xs pb-1">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <a href="#" class="text-black border-b border-t border-black cursor-pointer">Shop now</a>
+                    </div>
+                </div>
+
+                <!-- 3 CARD -->
+
+                <div
+                    class="category__card bg-redColor dark:bg-darkColorLight flex py-3 rounded-lg overflow-hidden md:flex-1">
+                    <div class="basis-1/3 relative">
+                        <img src="../img/BENZ - 5.png" alt="category image" class="absolute w-28 -bottom-0">
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <h4 class="card__title">BENZ</h4>
+                            <p class="text-xs pb-1">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <a href="#" class="text-black border-b border-t border-black cursor-pointer">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promo">
+            <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
+                <!-- 1 CARD -->
+                <div
+                    class="promo__card-1 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                    <img src="../img/Promo-Audi.png" alt="promo image"
+                        class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+                    <div class="space-y-2 pt-5 md:pt-0">
+                        <p class="text-xs text-secondaryColor">Payday promo</p>
+                        <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
+                        <p class="text-paragraphColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                            enim dolore vel eius facilis reprehenderit eveniet vitae eaque iusto autem!</p>
+                        <a href="#" class="text-xs text-secondaryColor">Buy online</a>
+                    </div>
+                </div>
+                <!-- 2 CARD -->
+
+                <div
+                    class="promo__card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+                    <img src=" ../img/Promo-Benz.png" alt="promo image"
+                        class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+                    <div class="space-y-2 pt-5 md:pt-0">
+                        <p class="text-xs text-secondaryColor">Payday promo</p>
+                        <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
+                        <p class="text-paragraphColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                            enim dolore vel eius facilis reprehenderit eveniet vitae eaque iusto autem!</p>
+                        <a href="#" class="text-xs text-secondaryColor">Buy online</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container flex flex-col gap-10 md:flex-row">
+                <div class="about__img flex-1">
+                    <img src="../img/About-Benz.jpeg" alt="about image" class="rounded-lg">
+                </div>
+
+                <div class="about__content flex-1">
+                    <h2 class="section__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, quis!
+                    </h2>
+                    <div class="separator"></div>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, non sit ea
+                        eos quidem inventore dolor ipsa assumenda quaerat at autem vel corporis repellendus quos ab ut
+                        nostrum temporibus fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                        consequatur alias dolor libero amet eos qui ut cupiditate minima debitis non, deserunt numquam
+                        culpa recusandae impedit quae nihil earum obcaecati? Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Culpa accusamus sint possimus delectus fuga voluptas, modi ex facilis. Sequi
+                        aut praesentium blanditiis ab itaque neque quis modi fugit pariatur vel.</p>
+                    <ul class="grid grid-cols-2 py-5 space-y-1">
+                        <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
+                            Best price</li>
+                        <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
+                            Best price</li>
+
+                        <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
+                            Best price</li>
+
+                        <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
+                            Best price</li>
+                    </ul>
+                    <a href="" class="btn btn-primary">About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="section__title">Lorem, ipsum dolor.</h2>
+                    <div class="separator mx-auto"></div>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed,
+                        corrupti illum iure repellendus vitae. Fuga quidem sapiente blanditiis temporibus unde modi quo
+                        ducimus libero iusto cum, soluta reiciendis nemo!</p>
+
+                    <div class="tabs__wrap">
+                        <ul class="flex flex-wrap justify-center gap-3 py-10">
+                            <li data-tabs="all" class="btn bg-primaryColorLight active dark:bg-secondaryColor">ALL</li>
+                            <li data-tabs="bmw" class="btn bg-primaryColorLight dark:bg-secondaryColor">BMW</li>
+                            <li data-tabs="audi" class="btn bg-primaryColorLight dark:bg-secondaryColor">AUDI</li>
+                            <li data-tabs="benz" class="btn bg-primaryColorLight dark:bg-secondaryColor">BENZ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="menu__items">
+                        <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+
+                            <!-- BMW -->
+                            <li class="item_wrap bmw">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BMW - 1.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+                            <li class="item_wrap bmw">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BMW - 2.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap bmw">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BMW -3.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap bmw">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BMW-5.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap bmw">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BMW-4.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <!-- AUDI-->
+                            <li class="item_wrap audi">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/AUDI - 1.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap audi">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/AUDI - 2.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap audi">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/AUDI - 3.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap audi">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/AUDI - 4.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap audi">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/AUDI - 5.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap audi">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/AUDI - 6.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <!-- BENZ-->
+                            <li class="item_wrap benz">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BENZ - 1.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap benz">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BENZ - 2.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap benz">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BENZ - 3.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap benz">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BENZ - 4.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+
+                            <li class="item_wrap benz">
+                                <div
+                                    class="h-56 grid place-items-center bg-redColor dark:bg-darkColorLight rounded-3xl hover:bg-primaryColorLight ease-linear duration-200 lg:h-40">
+                                    <img src="../img/BENZ - 5.png" alt="bmw image"
+                                        class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="mb-2">
+                                        <h4 class="card__title">Lorem ipsum dolor.</h4>
+                                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            Maiores, harum?</p>
+                                    </div>
+                                    <p class="">35.000€</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
+            <div class="container">
+                <div class="max-w-md mx-auto text-center">
+                    <h2 class="section__title border-b border-secondaryColor p-2">CUSTOMER REVIEW</h2>
+                    <div class="separator mx-auto"></div>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ipsa?
+                        Delectus beatae explicabo repudiandae quod.</p>
+                </div>
+                <div class="swiper py-10 customer__review">
+                    <ul class="swiper-wrapper">
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                    voluptatibus accusamus quibusdam saepe illo illum nihil perspiciatis.</p>
+                                <div class="flex items-center">
+                                    <img src="../img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="font-oswald uppercase">Lorem, ipsum.</p>
+                                        <p class="paragraph">Lorem, ipsum.</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                    voluptatibus accusamus quibusdam saepe illo illum nihil perspiciatis.</p>
+                                <div class="flex items-center">
+                                    <img src="../img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="font-oswald uppercase">Lorem, ipsum dolor.</p>
+                                        <p class="paragraph">Lorem.</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                    voluptatibus accusamus quibusdam saepe illo illum nihil perspiciatis.</p>
+                                <div class="flex items-center">
+                                    <img src="../img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="font-oswald uppercase">Lorem, ipsum.</p>
+                                        <p class="paragraph">Lorem, ipsum.</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                    voluptatibus accusamus quibusdam saepe illo illum nihil perspiciatis.</p>
+                                <div class="flex items-center">
+                                    <img src="../img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="font-oswald uppercase">Lorem, ipsum dolor.</p>
+                                        <p class="paragraph">lorem</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                    voluptatibus accusamus quibusdam saepe illo illum nihil perspiciatis.</p>
+                                <div class="flex items-center">
+                                    <img src="../img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                                    <div class="ml-2">
+                                        <p class="font-oswald uppercase">Lorem, ipsum.</p>
+                                        <p class="paragraph">Lorem, ipsum dolor.</p>
+                                    </div>
+                                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-redColor dark:bg-secondaryColor">
+            <div class="container flex flex-col gap-5 md:items-center md:flex-row pb-12">
+                <div class="space-y-4 md:flex-1 ">
+                    <h2 class="section__title text-black">Get exlusive update</h2>
+                    <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem
+                        placeat !</p>
+                </div>
+                <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+                    <input type="email" placeholder="Email adress"
+                        class="p-2 text-black rounded-lg outline-none md:w-full"><a href=""
+                        class="flex items-center justify-center gap-2 btn bg-black hover:opacity-75">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Subscribe</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-10">
+        <div class="container">
+            <ul class="grid grid-cols-2 items-start gap-5 md:grid-cols-2 lg:grid-cols-4">
+                <li>
+                    <div class="space-y-3">
+                        <a href="" class="text-4xl font-oswald uppercase">
+                            Knap<span class="text-secondaryColor">car</span>
+                        </a>
+                        <p class="text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quisquam recusandae molestias
+                            asperiores tempora voluptates nemo, sunt velit optio eligendi dignissimos doloremque aliquid
+                            blanditiis necessitatibus neque vitae fugit maiores! Commodi.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex flex-col gap-3">
+                        <h3 class="text-lg uppercase font-oswald">
+                            Support
+                        </h3>
+                        <a href="" class="text-xs hover:text-secondaryColor uppercase">lorem</a>
+                        <a href="" class="text-xs hover:text-secondaryColor uppercase">Lorem, ipsum.</a>
+                        <a href="" class="text-xs hover:text-secondaryColor uppercase">sadsda</a>
+                        <a href="" class="text-xs hover:text-secondaryColor uppercase">Lorem, ipsum.</a>
+                    </div>
+                </li>
+
+                <li class="space-y-8">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">phone</h3>
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                            +49 9334433532
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">email</h3>
+                        <p class="flex items-center gap-2 text-xs cursor-pointer">
+                            <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                            knapcar@gmail.com
+                        </p>
+                    </div>
+                </li>
+
+                <li class="space-y-8">
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">adress</h3>
+                        <p class="flex items-center gap-2 text-xs">
+                            <i class="fa-solid fa-location-dot text-xs text-secondaryColor">
+                                <a href="https://www.google.com/maps/place/Trausnitz+Castle/@48.5349526,12.0968709,12.89z/data=!4m15!1m8!3m7!1s0x479e260795c3dc7b:0x41d25a40937af20!2sLandshut!3b1!8m2!3d48.5441917!4d12.1468532!16zL20vMDF5eDZf!3m5!1s0x479e2670f68b46d5:0x98c1428f00e19c60!8m2!3d48.530922!4d12.1534987!16zL20vMDlfNTRr?entry=ttu"
+                                    target="_blank">Landshut</a>
+                            </i>
+                        </p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h3 class="text-lg uppercase font-oswald">follow us</h3>
+                        <div class="space-x-3">
+                            <i
+                                class="fa-brands fa-facebook-f text-lg text-secondaryColor hover:translate-y-3 ease-in duration-300 cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-twitter text-lg text-secondaryColor hover:translate-y-2 ease-in duration-300 cursor-pointer"></i>
+                            <i
+                                class="fa-brands fa-square-instagram text-lg text-secondaryColor hover:translate-y-1 ease-in duration-300 cursor-pointer"></i>
+
+                        </div>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <div
+                class="flex flex-col items-center border-t mt-5 border-primaryColorLight py-5 md:flex-row md:justify-between">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae!</p>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae!</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <a href=""
+        class="fixed right-4 -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-black z-50 hover:-translate-y-1 ease-in duration-200"
+        id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 30,
+            delay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                   
+                }
+            }
+        })
+
+    </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
